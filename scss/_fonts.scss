@@ -1,0 +1,12 @@
+@font-face { 
+    font-family: "Proxima Nova Regular";
+    src: url('../fonts/ProximaNova-Regular.eot') format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+         url('../fonts/ProximaNova-Regular.woff') format("woff"), /* все современные браузеры, IE9+ */
+         url('../fonts/ProximaNova-Regular.ttf') format("truetype"); /* все современные браузеры */
+}
+@font-face { 
+    font-family: "Proxima Nova Bold";
+    src: url('../fonts/ProximaNova-Bold.eot') format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+         url('../fonts/ProximaNova-Bold.woff') format("woff"), /* все современные браузеры, IE9+ */
+         url('../fonts/ProximaNova-Bold.ttf') format("truetype"); /* все современные браузеры */
+}
