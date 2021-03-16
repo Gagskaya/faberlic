@@ -19,6 +19,9 @@
 ul {
   list-style: none; }
 
+img {
+  max-width: 100%; }
+
 a {
   text-decoration: none; }
 
@@ -52,7 +55,7 @@ button {
     background-color: #bd0609; }
 
 .container {
-  width: 1440px;
+  width: 1140px;
   padding: 15px;
   margin: 0 auto; }
 
