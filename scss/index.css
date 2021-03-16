@@ -19,9 +19,6 @@
 ul {
   list-style: none; }
 
-img {
-  max-width: 100%; }
-
 a {
   text-decoration: none; }
 
@@ -71,14 +68,14 @@ button {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0; }
+    opacity: 0.5; }
   .header__present {
     position: absolute;
     bottom: 100px;
     right: 350px; }
   .header__main {
     position: relative;
-    z-index: 9999;
+    z-index: 99999;
     text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,9 +90,9 @@ button {
     .header__main-title h2 {
       margin-bottom: 15px;
       color: #E32E30;
-      font-size: 40px; }
+      font-size: 55px; }
     .header__main-title h4 {
-      font-size: 20px; }
+      font-size: 24px; }
     .header__main-subtitle {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -105,19 +102,21 @@ button {
               align-items: center;
       margin-top: 30px; }
       .header__main-subtitle h2 {
-        font-size: 40px;
+        font-size: 90px;
         margin-left: 30px;
         text-transform: none; }
     .header__main-discount span {
       color: #E32E30;
       font-weight: 700;
-      font-size: 80px;
+      font-size: 152px;
       display: block;
       margin-top: 30px;
       margin-bottom: 15px; }
     .header__main-discount h3 {
       margin-top: 15px;
       font-size: 30px; }
+    .header__main-buttons button {
+      min-width: 360px; }
     .header__main-buttons a {
       color: #000;
       text-decoration: underline;
@@ -131,7 +130,8 @@ button {
   padding-top: 40px; }
   .conditions__title {
     font-size: 40px;
-    margin-bottom: 35px; }
+    margin-bottom: 50px;
+    margin-top: 100px; }
   .conditions__steps {
     display: -webkit-box;
     display: -ms-flexbox;
