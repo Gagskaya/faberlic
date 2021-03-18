@@ -202,17 +202,24 @@
     }
     &__info {
       margin-top: 500px;
-      margin-bottom: 80px;
+      margin-bottom: 70px;
     }
   }
   .conditions {
-    background-position: -224px 992px;
+    background-position: -224px 915px;
     &__title {
       margin-top: 80px;
       font-size: 32px;
     }
+    &-steps {
+      div {
+        &:last-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
     &-rules {
-      margin-top: 50px;
+      margin-top: -20px;
       margin-bottom: 180px;
     }
     &__footer {
@@ -298,6 +305,11 @@
     }
   }
   .faq {
+    padding-top: 40px;
+    h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
     button {
       margin-bottom: 60px;
       margin-top: 50px;
@@ -306,6 +318,7 @@
       li {
         span {
           flex-basis: 91%;
+          font-size: 18px;
         }
       }
     }
@@ -313,6 +326,15 @@
   .footer {
     padding-top: 70px;
     padding-bottom: 80px;
+    margin-top: 0;
+    h3 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
     &__icons {
       div {
         width: 73px;
@@ -325,6 +347,9 @@
   }
 }
 @media screen and (max-width: 684.98px) {
+  .conditions {
+    background-position: -211px 949px;
+  }
   .participation {
     &__block {
       &-title {
@@ -336,6 +361,7 @@
       div {
         width: 57px;
         height: 57px;
+        border: 2px solid #e32e30;
       }
     }
   }
@@ -397,6 +423,9 @@
         h3 {
           margin-top: 0;
         }
+        &-star {
+          top: 0;
+        }
         &-title {
           margin-top: 0;
           margin-bottom: 0;
@@ -426,6 +455,7 @@
         padding: 7px;
         span {
           flex-basis: 87%;
+          font-size: 14px;
         }
       }
     }
@@ -434,6 +464,8 @@
     background: none;
     &__title {
       font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: 40px;
     }
     &__steps {
       &-rules {
@@ -566,19 +598,28 @@
       width: 100%;
       p {
         font-size: 14px;
+        i {
+          margin-top: 0;
+        }
       }
     }
     &__info {
       margin-top: 30px;
       font-size: 20px;
       margin-bottom: 0;
+      &__blocks {
+        &:last-child {
+          div {
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
       &-block {
         width: 100%;
         div {
           margin-bottom: 30px;
-          &:last-child {
-            margin-bottom: 0;
-          }
           b {
             font-size: 30px;
           }
@@ -602,7 +643,7 @@
   .footer {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     h3 {
       font-size: 18px;
       span {

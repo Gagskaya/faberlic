@@ -709,15 +709,17 @@ button {
         display: none; }
     .facts__info {
       margin-top: 500px;
-      margin-bottom: 80px; }
+      margin-bottom: 70px; }
 
   .conditions {
-    background-position: -224px 992px; }
+    background-position: -224px 915px; }
     .conditions__title {
       margin-top: 80px;
       font-size: 32px; }
+    .conditions-steps div:last-child {
+      margin-bottom: 50px; }
     .conditions-rules {
-      margin-top: 50px;
+      margin-top: -20px;
       margin-bottom: 180px; }
     .conditions__footer p {
       margin-bottom: 80px; }
@@ -771,29 +773,46 @@ button {
     .participation__block-title {
       font-size: 50px; }
 
-  .faq button {
-    margin-bottom: 60px;
-    margin-top: 50px; }
-  .faq ul li span {
-    -ms-flex-preferred-size: 91%;
-        flex-basis: 91%; }
+  .faq {
+    padding-top: 40px; }
+    .faq h3 {
+      font-size: 32px;
+      margin-bottom: 20px; }
+    .faq button {
+      margin-bottom: 60px;
+      margin-top: 50px; }
+    .faq ul li span {
+      -ms-flex-preferred-size: 91%;
+          flex-basis: 91%;
+      font-size: 18px; }
 
   .footer {
     padding-top: 70px;
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+    margin-top: 0; }
+    .footer h3 {
+      font-size: 30px; }
+    .footer h4 {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 25px; }
     .footer__icons div {
       width: 73px;
       height: 73px; }
     .footer__icons i {
       font-size: 30px; } }
 @media screen and (max-width: 684.98px) {
+  .conditions {
+    background-position: -211px 949px; }
+
   .participation__block-title {
     font-size: 20px; }
   .participation__block-text {
     font-size: 10px; }
   .participation__block div {
     width: 57px;
-    height: 57px; } }
+    height: 57px;
+    border: 2px solid #e32e30; } }
 @media screen and (max-width: 575px) {
   html {
     font-size: 8px; }
@@ -847,6 +866,8 @@ button {
         margin-bottom: 0; }
         .header__main-discount h3 {
           margin-top: 0; }
+        .header__main-discount-star {
+          top: 0; }
         .header__main-discount-title {
           margin-top: 0;
           margin-bottom: 0; }
@@ -865,12 +886,15 @@ button {
     padding: 7px; }
     .faq ul li span {
       -ms-flex-preferred-size: 87%;
-          flex-basis: 87%; }
+          flex-basis: 87%;
+      font-size: 14px; }
 
   .conditions {
     background: none; }
     .conditions__title {
-      font-size: 24px; }
+      font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: 40px; }
     .conditions__steps-rules {
       margin-bottom: 50px;
       margin-top: 30px; }
@@ -961,16 +985,18 @@ button {
       width: 100%; }
       .facts__about p {
         font-size: 14px; }
+        .facts__about p i {
+          margin-top: 0; }
     .facts__info {
       margin-top: 30px;
       font-size: 20px;
       margin-bottom: 0; }
+      .facts__info__blocks:last-child div:last-child {
+        margin-bottom: 0; }
       .facts__info-block {
         width: 100%; }
         .facts__info-block div {
           margin-bottom: 30px; }
-          .facts__info-block div:last-child {
-            margin-bottom: 0; }
           .facts__info-block div b {
             font-size: 30px; }
           .facts__info-block div p {
@@ -985,7 +1011,7 @@ button {
   .footer {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px; }
+    margin-top: 20px; }
     .footer h3 {
       font-size: 18px; }
       .footer h3 span {
