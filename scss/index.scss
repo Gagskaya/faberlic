@@ -79,7 +79,6 @@ button {
   height: 100vh;
   text-align: center;
   width: 100%;
-  padding-bottom: 40px;
   background-color: #fdc423;
   &__bg {
     position: absolute;
@@ -176,7 +175,6 @@ button {
   background-position: left 578px;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 40px;
   &__title {
     font-size: 40px;
     margin-bottom: 50px;
@@ -185,13 +183,12 @@ button {
   &__steps {
     display: flex;
     justify-content: space-between;
-    &-rules {
-      display: block;
-      margin-top: 80px;
-      margin-bottom: 260px;
-    }
   }
-
+  &-rules {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 260px;
+  }
   &__step {
     display: flex;
     align-items: flex-end;
@@ -479,17 +476,25 @@ button {
       div {
         display: flex;
         align-items: center;
-        img {
-          margin-left: 20px;
-          margin-right: 15px;
-        }
-        span {
+        p {
           font-size: 24px;
+          span {
+            color: #e32e30;
+            font-weight: 700;
+          }
         }
         b {
           font-size: 40px;
           min-width: 24px;
         }
+      }
+      &-line {
+        min-width: 100px;
+        height: 1px;
+        background: #000;
+        margin-left: 20px;
+        margin-right: 15px;
+        // display: block;
       }
     }
   }

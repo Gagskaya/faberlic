@@ -83,7 +83,6 @@ button {
   height: 100vh;
   text-align: center;
   width: 100%;
-  padding-bottom: 40px;
   background-color: #fdc423; }
   .header__bg {
     position: absolute;
@@ -164,8 +163,7 @@ button {
   background-image: url("../img/conditions-heart.png");
   background-position: left 578px;
   background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 40px; }
+  text-align: center; }
   .conditions a {
     text-decoration: underline;
     color: #000; }
@@ -180,10 +178,10 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .conditions__steps-rules {
-      display: block;
-      margin-top: 80px;
-      margin-bottom: 260px; }
+  .conditions-rules {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 260px; }
   .conditions__step {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -491,14 +489,20 @@ button {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .facts__info-block div img {
-          margin-left: 20px;
-          margin-right: 15px; }
-        .facts__info-block div span {
+        .facts__info-block div p {
           font-size: 24px; }
+          .facts__info-block div p span {
+            color: #e32e30;
+            font-weight: 700; }
         .facts__info-block div b {
           font-size: 40px;
           min-width: 24px; }
+      .facts__info-block-line {
+        min-width: 100px;
+        height: 1px;
+        background: #000;
+        margin-left: 20px;
+        margin-right: 15px; }
 
 .footer {
   display: -webkit-box;
@@ -712,7 +716,7 @@ button {
     .conditions__title {
       margin-top: 80px;
       font-size: 32px; }
-    .conditions__steps-rules {
+    .conditions-rules {
       margin-top: 50px;
       margin-bottom: 180px; }
     .conditions__footer p {
@@ -793,7 +797,7 @@ button {
 
   .container {
     max-width: 100%;
-    padding: 20px; }
+    padding: 0 20px 0 20px; }
 
   .mobile__heart {
     display: inline-block; }
@@ -802,7 +806,7 @@ button {
     display: block;
     position: absolute;
     left: 0;
-    bottom: 80px; }
+    bottom: 0; }
 
   .tablet__present {
     display: none; }
@@ -825,6 +829,7 @@ button {
         margin-bottom: 20px;
         font-size: 16px; }
       .header__main-subtitle {
+        margin-top: 20px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -834,11 +839,16 @@ button {
         .header__main-subtitle h2 {
           font-size: 67px;
           margin-left: 0; }
-      .header__main-discount-title {
-        margin-top: 40px;
-        margin-bottom: 20px; }
-      .header__main-discount h3 {
-        font-size: 18px; }
+      .header__main-discount {
+        margin-top: 0;
+        margin-bottom: 0; }
+        .header__main-discount h3 {
+          margin-top: 0; }
+        .header__main-discount-title {
+          margin-top: 0;
+          margin-bottom: 0; }
+        .header__main-discount h3 {
+          font-size: 18px; }
       .header__main-buttons button {
         min-width: 280px;
         width: 100%;
@@ -846,6 +856,8 @@ button {
       .header__main-heart {
         display: none; }
 
+  .faq h3 {
+    font-size: 24px; }
   .faq ul li {
     padding: 7px; }
     .faq ul li span {
@@ -856,6 +868,14 @@ button {
     background: none; }
     .conditions__title {
       font-size: 24px; }
+    .conditions__steps-rules {
+      margin-bottom: 50px;
+      margin-top: 30px; }
+    .conditions__steps div:last-child {
+      margin-bottom: 0; }
+    .conditions-rules {
+      margin-top: 30px;
+      margin-bottom: 50px; }
     .conditions__step-count {
       min-width: 105px;
       min-height: 109px; }
@@ -909,32 +929,56 @@ button {
         font-size: 18px;
         width: 100px;
         height: 63px; }
+    .conditions__footer {
+      margin-top: 50px; }
+      .conditions__footer h3 {
+        font-size: 18px; }
+      .conditions__footer p {
+        font-size: 14px; }
+      .conditions__footer button {
+        margin-bottom: 50px; }
 
   .participation h3 {
     font-size: 16px; }
 
   .facts {
-    background: url("../img/facts-mobile-1.png") 164px 296px, url("../img/facts-bg.png") center 300px;
+    background: url("../img/facts-mobile-1.png") center 140px, url("../img/facts-bg.png") center 190px;
     background-repeat: no-repeat; }
+    .facts__title {
+      margin: 0 auto;
+      margin-bottom: 400px;
+      text-align: center; }
+      .facts__title h3 {
+        font-size: 24px; }
     .facts__about {
       width: 100%; }
+      .facts__about p {
+        font-size: 14px; }
     .facts__info {
       margin-top: 30px;
-      font-size: 20px; }
+      font-size: 20px;
+      margin-bottom: 0; }
       .facts__info-block {
         width: 100%; }
         .facts__info-block div {
           margin-bottom: 30px; }
+          .facts__info-block div:last-child {
+            margin-bottom: 0; }
           .facts__info-block div b {
             font-size: 30px; }
-          .facts__info-block div span {
+          .facts__info-block div p {
             font-size: 20px; }
-    .facts__title {
-      margin-bottom: 370px; }
+        .facts__info-block-line {
+          min-width: 20px;
+          position: relative;
+          top: 15px;
+          margin-left: 10px;
+          margin-right: 10px; }
 
   .footer {
     padding-top: 50px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    margin-top: 50px; }
     .footer h3 {
       font-size: 18px; }
       .footer h3 span {
@@ -943,14 +987,13 @@ button {
       font-size: 18px;
       margin-top: 18px;
       margin-bottom: 25px; }
-    .footer__icons div {
-      width: 35px;
-      height: 35px; }
-      .footer__icons div i {
-        font-size: 15px; }
+    .footer__icons {
+      max-width: 100%; }
+      .footer__icons div {
+        width: 35px;
+        height: 35px; }
+        .footer__icons div i {
+          font-size: 15px; }
 
-  #pc__heart {
-    display: none; }
-
-  #mobile__heart {
-    display: block; } }
+  .pc__heart {
+    display: none; } }
