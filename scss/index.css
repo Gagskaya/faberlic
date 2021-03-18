@@ -360,6 +360,7 @@ button {
   .participation__block {
     border-radius: 100%; }
     .participation__block div {
+      border: 4px solid #e32e30;
       width: 213px;
       height: 213px;
       background: #fff;
@@ -711,7 +712,7 @@ button {
       margin-bottom: 80px; }
 
   .conditions {
-    background-position: -224px 1038px; }
+    background-position: -224px 992px; }
     .conditions__title {
       margin-top: 80px;
       font-size: 32px; }
@@ -941,7 +942,8 @@ button {
         margin-bottom: 50px; }
 
   .participation {
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-bottom: 25px; }
     .participation h3 {
       font-size: 16px;
       margin-bottom: 17px; }
