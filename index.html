@@ -11,18 +11,25 @@
 </head>
 
 <body>
-
-
+  
     <header class="header">
         <img src="img/animation.png"
             class="header__bg animate__animated animate__fadeInRightBig  animate__delay-1s animate__slower" alt="">
+        <img src="img/tablet-bg.png"
+            class="tablet__bg animate__animated animate__fadeInRightBig  animate__delay-1s animate__slower" alt="">
         <img src="img/present.png" alt=""
             class="header__present  animate__animated animate__shakeX animate__infinite	 animate__delay-2s animate__slower">
+        <img src="img/tablet-present.png" alt=""
+            class="tablet__present  animate__animated animate__shakeX animate__infinite	 animate__delay-2s animate__slower">
+        <img src="img/mobile-present.png" alt=""
+            class="mobile__present  animate__animated animate__shakeX animate__infinite	 animate__delay-2s animate__slower">
         <div class="container">
             <div class="header__main">
+                <img src="img/heart-2.png" class="header__main-heart" alt="">
                 <div class="header__main-title">
                     <h2>Новая акция!</h2>
                     <h4>Для зарегистрированных покупателей</h4>
+                    <img src="img/mobile-heart.png" alt="" class="mobile__heart">
                 </div>
 
                 <div class="header__main-subtitle">
@@ -32,8 +39,8 @@
                 </div>
                 <div class="header__main-discount">
                     <div style="display: flex;" class="header__main-discount-wrap">
-                        <span>-70 % </span>
-                        <span style="font-size: 64px; position: relative; top: 30px;">*</span>
+                        <span class="header__main-discount-title">-70 % </span>
+                        <span class="header__main-discount-star">*</span>
                     </div>
 
                     <h3>На любимый продукт</h3>
@@ -44,63 +51,289 @@
                 </div>
             </div>
         </div>
-        <p style="position: absolute; right: 116px; bottom: 30px; font-size: 18px;" class="info-discount">*см. условия
-            акции</p>
+        <a style="position: absolute; right: 116px; bottom: 30px; font-size: 18px;" class="info-discount">*см. условия
+            акции</a>
     </header>
-   
-        <section class="conditions">
-<div class="container">
-    <h2 class="conditions__title">
-        Условия акции
-    </h2>
-    <div class="conditions__steps">
-        <div class="conditions__step">
-            <img src="img/1-step.png" alt="1 шаг">
-            <p>Оформляйте и оплачивайте
-                заказы <b>от 1000 р.</b>
-                каждый каталог
-            </p>
-        </div>
-        <div class="conditions__step">
-            <img src="img/2-step.png" alt="2 шаг">
-            <p>С <b>третьего </b> каталога и далее получайте скидку <b>-70%*</b>
-                на любимый продукт
 
-            </p>
-        </div>
-        <div class="conditions__step">
-            <img src="img/3-step.png" alt="3 шаг">
-            <p>Продолжайте делать покупки
-                <b>от 1000 р.</b> и в каждом каталоге выбирайте любимый продукт
-                со скидкой -70%*
-            </p>
+    <section class="conditions">
+        <div class="container">
+            <h2 class="conditions__title">
+                Условия акции
+            </h2>
+            <div class="conditions__steps">
+                <div class="conditions__step">
+                    <div class="conditions__step-count">
+                        <span class="conditions__step-count-title">Шаг</span>
+                        <span class="conditions__step-count-number">1</span>
+                        <svg class="step-arrow-up" width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5905 0.272705H0V14.4794H27.7728V40.8634H41.9795V0.272892H40.5905V0.272705Z" fill="#E32E30"/>
+                            </svg>
+                        <svg class="step-arrow-down" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000167847 41H40.5903V26.7933H14.2067V0.409092H-3.8147e-06V26.7933H-0.000167847V41Z" fill="#E32E30"/>
+                            </svg>
+                    </div>
+                    <div class="conditions__step-text">
+                        Оформляйте и оплачивайте
+                        заказы <b>от 1000 р.</b>
+                        каждый каталог
+                    </div>
+                </div>
+                <div class="conditions__step">
+                    <div class="conditions__step-count">
+                        <span class="conditions__step-count-title">Шаг</span>
+                        <span class="conditions__step-count-number">2</span>
+                        <svg class="step-arrow-up" width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5905 0.272705H0V14.4794H27.7728V40.8634H41.9795V0.272892H40.5905V0.272705Z" fill="#E32E30"/>
+                            </svg>
+                        <svg class="step-arrow-down" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000167847 41H40.5903V26.7933H14.2067V0.409092H-3.8147e-06V26.7933H-0.000167847V41Z" fill="#E32E30"/>
+                            </svg>
+                    </div>
+                    <div class="conditions__step-text">
+                        <b> С третьего </b> каталога и далее получайте <b>скидку -70%*</b>
+                        на любимый продукт
+                    </div>
+                </div>
+                <div class="conditions__step">
+                    <div class="conditions__step-count">
+                        <span class="conditions__step-count-title">Шаг</span>
+                        <span class="conditions__step-count-number">3</span>
+                        <svg class="step-arrow-up" width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5905 0.272705H0V14.4794H27.7728V40.8634H41.9795V0.272892H40.5905V0.272705Z" fill="#E32E30"/>
+                            </svg>
+                        <svg class="step-arrow-down" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000167847 41H40.5903V26.7933H14.2067V0.409092H-3.8147e-06V26.7933H-0.000167847V41Z" fill="#E32E30"/>
+                            </svg>
+                    </div>
+                    <div class="conditions__step-text">
+                        Продолжайте делать покупки
+                        <b>от 1000 р.</b> и в каждом каталоге выбирайте любимый продукт
+                        <b>со скидкой -70%*</b>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="conditions__steps-rules"> Полные правила акции > </a>
+            <div class="conditions__orders">
+
+                <div class="conditions__order">
+                    <div>
+                        <div class="conditions__order-bows">
+                            <div class="conditions__order-bow-1">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.3774 7.91012C37.8069 14.8571 42.0639 44.6922 42.0639 44.6922C42.0639 44.6922 12.6135 38.1068 6.18406 31.1598C-0.245408 24.2129 0.182213 13.3766 7.13918 6.95638C14.0961 0.536145 24.948 0.963151 31.3774 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <div class="conditions__order-bow-2">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.6226 7.91012C6.19309 14.8571 1.93609 44.6922 1.93609 44.6922C1.93609 44.6922 31.3865 38.1068 37.8159 31.1598C44.2454 24.2129 43.8178 13.3766 36.8608 6.95638C29.9039 0.536145 19.052 0.963151 12.6226 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+    
+                        </div>
+    
+                        <div class="conditions__order-header">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="conditions__order-main">
+                            <div>
+                                <span>  заказ <br>
+                                    от 1 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    
+                </div>
+                <div class="conditions__order" >
+                    <div>
+                        <div class="conditions__order-bows">
+                            <div class="conditions__order-bow-1">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.3774 7.91012C37.8069 14.8571 42.0639 44.6922 42.0639 44.6922C42.0639 44.6922 12.6135 38.1068 6.18406 31.1598C-0.245408 24.2129 0.182213 13.3766 7.13918 6.95638C14.0961 0.536145 24.948 0.963151 31.3774 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <div class="conditions__order-bow-2">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.6226 7.91012C6.19309 14.8571 1.93609 44.6922 1.93609 44.6922C1.93609 44.6922 31.3865 38.1068 37.8159 31.1598C44.2454 24.2129 43.8178 13.3766 36.8608 6.95638C29.9039 0.536145 19.052 0.963151 12.6226 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+    
+                        </div>
+    
+                        <div class="conditions__order-header">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="conditions__order-main">
+                            <div>
+                              <span>  заказ <br>
+                                от 1 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+         
+                    
+                </div>
+                <div class="conditions__order">
+                    <div>
+                        <div class="conditions__order-bows">
+                            <div class="conditions__order-bow-1">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.3774 7.91012C37.8069 14.8571 42.0639 44.6922 42.0639 44.6922C42.0639 44.6922 12.6135 38.1068 6.18406 31.1598C-0.245408 24.2129 0.182213 13.3766 7.13918 6.95638C14.0961 0.536145 24.948 0.963151 31.3774 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <div class="conditions__order-bow-2">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.6226 7.91012C6.19309 14.8571 1.93609 44.6922 1.93609 44.6922C1.93609 44.6922 31.3865 38.1068 37.8159 31.1598C44.2454 24.2129 43.8178 13.3766 36.8608 6.95638C29.9039 0.536145 19.052 0.963151 12.6226 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+    
+                        </div>
+    
+                        <div class="conditions__order-header">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="conditions__order-main">
+                            <div>
+                                <span>  заказ <br>
+                                    от 1 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conditions__order-text">
+                        <p>любимый 
+                            продукт
+                            со скидкой</p>
+                            <div class="conditions__order-text-heart">
+                                <img src="img/heart-70%.svg" alt="" id='pc__heart'>
+                                <img src="img/conditions-mobile-heart.svg" alt="" id='mobile__heart'>
+                                <span>-70%</span>
+                            </div>
+                           
+                            
+                    </div>
+                    
+                </div>
+                <div class="conditions__order">
+                    <div>
+                        <div class="conditions__order-bows">
+                            <div class="conditions__order-bow-1">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.3774 7.91012C37.8069 14.8571 42.0639 44.6922 42.0639 44.6922C42.0639 44.6922 12.6135 38.1068 6.18406 31.1598C-0.245408 24.2129 0.182213 13.3766 7.13918 6.95638C14.0961 0.536145 24.948 0.963151 31.3774 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <div class="conditions__order-bow-2">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.6226 7.91012C6.19309 14.8571 1.93609 44.6922 1.93609 44.6922C1.93609 44.6922 31.3865 38.1068 37.8159 31.1598C44.2454 24.2129 43.8178 13.3766 36.8608 6.95638C29.9039 0.536145 19.052 0.963151 12.6226 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+    
+                        </div>
+    
+                        <div class="conditions__order-header">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="conditions__order-main">
+                            <div>
+                                <span>  заказ <br>
+                                    от 1 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conditions__order-text">
+                        <p>любимый 
+                            продукт
+                            со скидкой</p>
+                            <div class="conditions__order-text-heart">
+                                <img src="img/heart-70%.svg" alt="" id='pc__heart'>
+                                <img src="img/conditions-mobile-heart.svg" alt="" id='mobile__heart'>
+                                <span>-70%</span>
+                            </div>
+                           
+                           
+                    </div>
+                    
+                </div>
+                <div class="conditions__order">
+                    <div>
+                        <div class="conditions__order-bows">
+                            <div class="conditions__order-bow-1">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.3774 7.91012C37.8069 14.8571 42.0639 44.6922 42.0639 44.6922C42.0639 44.6922 12.6135 38.1068 6.18406 31.1598C-0.245408 24.2129 0.182213 13.3766 7.13918 6.95638C14.0961 0.536145 24.948 0.963151 31.3774 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+                            <div class="conditions__order-bow-2">
+                                <svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.6226 7.91012C6.19309 14.8571 1.93609 44.6922 1.93609 44.6922C1.93609 44.6922 31.3865 38.1068 37.8159 31.1598C44.2454 24.2129 43.8178 13.3766 36.8608 6.95638C29.9039 0.536145 19.052 0.963151 12.6226 7.91012Z"
+                                        stroke="#FDC423" stroke-width="3" />
+                                </svg>
+                            </div>
+    
+                        </div>
+    
+                        <div class="conditions__order-header">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="conditions__order-main">
+                            <div>
+                                заказ <br>
+                                от 1 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conditions__order-text">
+                        <p>любимый 
+                            продукт
+                            со скидкой</p>
+                            <div class="conditions__order-text-heart">
+                                <img src="img/heart-70%.svg" alt="">
+                                <span>-70%</span>
+                            </div>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            <div class="conditions__footer">
+                <button>Перейти к покупкам </button>
+                <h3>ПОДРОБНОСТИ У ВАШЕГО КОНСУЛЬТАНТА И НА <a href=""> FABERLIC.COM</a></h3>
+                <p>*Скидка -70% будет доступна в разделе «Ваши персональные акции», когда корзина наполнится на
+                    сумму от 1000 руб.
+                    в ценах каталога. Скидка -70% предоставляется на один продукт на выбор. В акции участвуют
+                    парфюмерная
+                    и косметическая продукция, косметика для дома, чулочно-носочные изделия, продукты категории
+                    Wellness.</p>
+            </div>
         </div>
 
-    </div>
-    <a href="#" style="display : block;margin-top: 80px; margin-bottom: 260px;"> Полные правила акции > </a>
-    <div class="conditions__orders">
-        <img src="img/order.png" style="position: relative; top : -37px" alt="">
-        <img src="img/order.png" style="position: relative; top : -37px" alt="">
-        <img src="img/order-2.png" alt="">
-        <img src="img/order-2.png" alt="">
-        <img src="img/order-2.png" alt="">
-    </div>
-    <div class="conditions__footer">
-        <button>Перейти к покупкам </button>
-        <h3>ПОДРОБНОСТИ У ВАШЕГО КОНСУЛЬТАНТА И НА FABERLIC.COM</h3>
-        <p>*Скидка -70% будет доступна в разделе «Ваши персональные акции», когда корзина наполнится на
-            сумму от 1000 руб.
-            в ценах каталога. Скидка -70% предоставляется на один продукт на выбор. В акции участвуют
-            парфюмерная
-            и косметическая продукция, косметика для дома, чулочно-носочные изделия, продукты категории
-            Wellness.</p>
-    </div>
-</div>
-  
 
-        </section>
-   
-    <section class="participation">
+         </section>
+
+     <section class="participation">
         <div class="container">
             <h3>
                 Принимайте участие в акции уже сейчас!
@@ -108,16 +341,44 @@
             </h3>
             <div class="participation__blocks">
                 <div class="participation__block">
-                    <img src="img/days.png" alt="">
+                    <div>
+                        <span class="participation__block-title">
+                            03
+                        </span>
+                        <span class="participation__block-text">
+                            дней
+                        </span>
+                    </div>
                 </div>
                 <div class="participation__block">
-                    <img src="img/hour.png" alt="">
+                    <div>
+                        <span class="participation__block-title">
+                            12
+                        </span>
+                        <span class="participation__block-text">
+                            часов
+                        </span>
+                    </div>
                 </div>
                 <div class="participation__block">
-                    <img src="img/minutes.png" alt="">
+                    <div>
+                        <span class="participation__block-title">
+                            48
+                        </span>
+                        <span class="participation__block-text">
+                            минут
+                        </span>
+                    </div>
                 </div>
                 <div class="participation__block">
-                    <img src="img/seconds.png" alt="">
+                    <div>
+                        <span class="participation__block-title">
+                            35
+                        </span>
+                        <span class="participation__block-text">
+                            секунд
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,33 +388,36 @@
         <div class="container">
             <h3>Вопросы и Ответы</h3>
             <ul>
-                <li> <b>1</b> Периоды действия акции - 16/2020 – 7/2021. Будут ли учитываться заказы от 1 000 руб.
-                    в ценах каталога в периодах 14 и 15/2020 для получения скидки 70%? <i><img src="img/plus.svg"
-                            alt=""></i></li>
-                <li><b>2</b> <span style="text-align: left;">Войдет ли в акцию продукция Wellness, в частности,
+                <li><b>1</b> <span>Периоды действия акции - 16/2020 – 7/2021. Будут ли учитываться заказы от 1 000 руб.
+                    в ценах каталога в периодах 14 и 15/2020 для получения скидки 70%? </span> <i><img src="img/plus.svg" alt=""></i>
+                </li>
+                <li><b>2</b> <span>Войдет ли в акцию продукция Wellness, в частности,
                         коктейли?</span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li><b>1</b>Если Консультант делает заказы от 1000 руб. каждый каталог и в 16 каталоге не воспользуется
-                    скидкой 70%, то скидка 70% пропадает? <i><img src="img/plus.svg" alt=""></i> </li>
-                <li><b>1</b>Будет ли у Директора отчет, фиксирующий участие Консультантов его структуры в акции с
-                    указанием количества периодов участия?<i><img src="img/plus.svg" alt=""></i>
+                <li><b>3</b> <span>Если Консультант делает заказы от 1000 руб. каждый каталог и в 16 каталоге не воспользуется
+                    скидкой 70%, то скидка 70% пропадает? </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li> <b>1</b>Продукты со скидкой 70% будут с полными баллами? <i><img src="img/plus.svg" alt=""></i>
+                <li><b>4</b> <span>Будет ли у Директора отчет, фиксирующий участие Консультантов его структуры в акции с указанием количества периодов участия?
+                </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li> <b>1</b>Учитываются заказы от 1 000 руб. в ценах каталога или в ценах Консультанта? <i><img
-                            src="img/plus.svg" alt=""></i>
+                <li><b>5</b> <span>Продукты со скидкой 70% будут с полными баллами?
+                </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li> <b>1</b>Как будет осуществляться возврат денежных средств и перерасчет акции при оформлении
-                    возврата на продукт со скидкой 70%? <i><img src="img/plus.svg" alt=""></i>
+                <li><b>6</b> <span>Учитываются заказы от 1 000 руб. в ценах каталога или в ценах Консультанта?
+                </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li> <b>1</b>Будет ли подсветка в личном кабинете Консультанта с информированием об участии в акции,
-                    количестве периодов участия, выполненных условиях и т.д.? <i><img src="img/plus.svg" alt=""></i>
+                <li><b>7</b> <span>Как будет осуществляться возврат денежных средств и перерасчет акции при оформлении
+                    возврата на продукт со скидкой 70%?
+                    </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li> <b>1</b>Если Консультант выкупил заказ от 1000 руб. и оформил претензию, сработает ли акция?
-                    <i><img src="img/plus.svg" alt=""></i>
+                <li><b>8</b> <span>Будет ли подсветка в личном кабинете Консультанта с информированием об участии в акции,
+                    количестве периодов участия, выполненных условиях и т.д.? </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
-                <li> <b>1</b>Заказ от 1000 руб. должен быть единоразовым или суммарным? <i><img src="img/plus.svg"
-                            alt=""></i>
+                <li><b>9</b> <span>Если Консультант выкупил заказ от 1000 руб. и оформил претензию, сработает ли акция?
+                </span> <i><img src="img/plus.svg" alt=""></i>
+                </li>
+                <li><b>10</b> <span>Заказ от 1000 руб. должен быть единоразовым или суммарным? 
+                </span> <i><img src="img/plus.svg" alt=""></i>
                 </li>
                 <button>Перейти к покупкам</button>
             </ul>
@@ -161,11 +425,15 @@
         </div>
     </section>
     <section class="facts">
+
         <div class="container">
-            <div class="facts__about">
+            <div class="facts__title">
                 <h3>Факты о компании</h3>
+            </div>
+            <div class="facts__about">
+                
                 <span>#давайтезнакомиться</span>
-                <p>Faberlic – единственная российская компания, которая уже 14 лет входит в топ-100 крупнейших
+                <p>Faberlic – единственная российская компания, которая уже 14 лет входит <b>в топ-100</b> крупнейших
                     парфюмерно-косметических компаний мира, а в кризисном 2015-м году заняла 3 место по темпам роста*.
                     За право попасть в этот рейтинг ежегодно борются более 50 000 брендов.
                     <i>*Рейтинг ежегодно публикуется в журнале Woman’s Wear Daily..</i>
@@ -173,33 +441,44 @@
             </div>
 
             <div class="facts__info">
-                <ul>
-                    <li>
-                        <b>1 </b>
-                        <p> <span>23 года успеха: </span> на рынке с 1997 года</p>
-                    </li>
-                    <li>
-                        <b>4 </b>
-                        <p> Собственное <span> научные разработки</span> </p>
-                    </li>
-                    <li>
-                        <b>2 </b>
-                        <p> Продажи более чем <span>в 40 странах</span></p>
-                    </li>
-                    <li>
-                        <b>5 </b>
-                        <p> Собственное <span>производство </span></p>
-                    </li>
-                    <li>
-                        <b>3 </b>
-                        <p> Нас выбирают <span>10 000 000 семей</span> </p>
-                    </li>
-                    <li>
-                        <b>6 </b>
-                        <p> <span>Более 30</span> уникальных патентов на продукцию</p>
-                    </li>
-                </ul>
+                <div class="facts__info-blocks">
+                    <div class="facts__info-block">
+                        <div>
+                            <b >1</b>
+                            <img src="img/Line.png" alt="" >
+                            <span>23 года успеха: на рынке с 1997 года</span>
+                        </div>
+                        <div>
+                            <b>2</b>
+                            <img src="img/Line.png" alt="">
+                            <span>Собственные научные разработки</span>
+                        </div>
+                        <div>
+                            <b>3</b>
+                            <img src="img/Line.png" alt="">
+                            <span>Продажи более чем в 40 странах</span>
+                        </div>
+                    </div>
+                    <div class="facts__info-block">
+                        <div>
+                            <b>4</b>
+                            <img src="img/Line.png" alt="">
+                            <span>Собственное производство</span>
+                        </div>
+                        <div>
+                            <b>5</b>
+                            <img src="img/Line.png" alt="">
+                            <span>Нас выбирают 10 000 000 семей</span>
+                        </div>
+                        <div>
+                            <b>6</b>
+                            <img src="img/Line.png" alt="">
+                            <span>Более 30 уникальных патентов на продукцию</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
     </section>
     <footer class="footer">
@@ -208,16 +487,36 @@
                 делитесь ссылкой в соцсетях и приглашайте друзей</h3>
             <h4>Чтобы ссылка была реферальной, авторизуйтесь на сайте</h4>
             <div class="footer__icons">
-                <img src="img/vk.svg" alt="лого вк">
-                <img src="img/ok.svg" alt="лого ок">
-                <img src="img/ok.svg" alt="логок ок">
-                <img src="img/telegram.svg" alt="лого телеграм">
-                <img src="img/whatsapp.svg" alt="лого whatsapp">
-                <img src="img/tel.svg" alt="лого телефона">
+                <div>
+                    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div>
+                    <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                    
+                </div>
+                <div>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    
+                </div>
+                <div>
+                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                    
+                </div>
+                <div>
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+
+ 
             </div>
         </div>
 
-    </footer>
+    </footer>  
+        <script src="https://use.fontawesome.com/d277b50bb6.js"></script>
 </body>
 
 </html>
