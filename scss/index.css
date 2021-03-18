@@ -338,26 +338,25 @@ button {
       margin-bottom: 225px; }
 
 .participation {
+  padding-top: 50px;
   margin-bottom: 260px;
-  background-color: #fdc423;
-  padding-bottom: 15px; }
+  padding-bottom: 60px;
+  background-color: #fdc423; }
   .participation h3 {
     font-size: 3rem;
     max-width: 731px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 23px; }
+    margin-bottom: 55px; }
   .participation__blocks {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 55px;
-    margin-bottom: 55px; }
+            justify-content: space-between; }
   .participation__block {
     border-radius: 100%; }
     .participation__block div {
@@ -759,9 +758,12 @@ button {
         height: 73px; }
 
   .participation {
+    padding-top: 30px;
+    padding-bottom: 40px;
     margin-bottom: 80px; }
     .participation h3 {
-      font-size: 24px; }
+      font-size: 24px;
+      margin-bottom: 40px; }
     .participation__block div {
       width: 157px;
       height: 157px; }
@@ -938,8 +940,11 @@ button {
       .conditions__footer button {
         margin-bottom: 50px; }
 
-  .participation h3 {
-    font-size: 16px; }
+  .participation {
+    padding-top: 20px; }
+    .participation h3 {
+      font-size: 16px;
+      margin-bottom: 17px; }
 
   .facts {
     background: url("../img/facts-mobile-1.png") center 140px, url("../img/facts-bg.png") center 190px;

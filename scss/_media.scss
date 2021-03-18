@@ -279,9 +279,12 @@
     }
   }
   .participation {
+    padding-top: 30px;
+    padding-bottom: 40px;
     margin-bottom: 80px;
     h3 {
       font-size: 24px;
+      margin-bottom: 40px;
     }
     &__block {
       div {
@@ -543,8 +546,10 @@
     }
   }
   .participation {
+    padding-top: 20px;
     h3 {
       font-size: 16px;
+      margin-bottom: 17px;
     }
   }
   .facts {
