@@ -821,6 +821,7 @@ button {
     border: 2px solid #e32e30; } }
 @media screen and (max-width: 575px) {
   .info-discount {
+    font-size: 12px;
     right: 15px; }
 
   html {
@@ -846,6 +847,7 @@ button {
     min-width: 280px; }
 
   .header {
+    height: 815px;
     padding-left: 0;
     text-align: center; }
     .header__main {
