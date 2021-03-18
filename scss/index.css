@@ -63,6 +63,12 @@ button {
 #mobile__heart {
   display: none; }
 
+.info-discount {
+  position: absolute;
+  right: 47px;
+  bottom: 30px;
+  font-size: 18px; }
+
 .tablet__bg,
 .tablet__present,
 .mobile__heart {
@@ -814,6 +820,9 @@ button {
     height: 57px;
     border: 2px solid #e32e30; } }
 @media screen and (max-width: 575px) {
+  .info-discount {
+    right: 15px; }
+
   html {
     font-size: 8px; }
 
