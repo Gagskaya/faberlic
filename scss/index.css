@@ -297,7 +297,6 @@ button {
       left: 14px;
       font-weight: 700; }
       .conditions__order-main div span {
-        text-transform: uppercase;
         max-width: 135px; }
     .conditions__order-text {
       display: -webkit-box;
