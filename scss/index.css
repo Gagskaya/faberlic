@@ -847,7 +847,7 @@ button {
     min-width: 280px; }
 
   .header {
-    height: 815px;
+    height: 860px;
     padding-left: 0;
     text-align: center; }
     .header__main {
@@ -881,7 +881,9 @@ button {
           top: 0; }
         .header__main-discount-title {
           margin-top: 0;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          max-height: 100px;
+          margin-bottom: 20px; }
         .header__main-discount h3 {
           font-size: 18px; }
       .header__main-buttons button {
