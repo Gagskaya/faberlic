@@ -386,6 +386,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    max-height: 260px;
   }
   .tablet__present {
     display: none;
@@ -394,7 +395,7 @@
     min-width: 280px;
   }
   .header {
-    height: 860px;
+    height: 815px;
     padding-left: 0;
     text-align: center;
     &__main {
