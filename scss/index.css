@@ -737,8 +737,8 @@ button {
       -ms-flex-preferred-size: 0;
           flex-basis: 0; }
       .conditions__order-text-heart {
-        left: 10px;
-        top: -8px; }
+        left: 0;
+        top: -5px; }
         .conditions__order-text-heart img {
           left: -25px;
           top: -10px; }
