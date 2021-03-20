@@ -736,12 +736,15 @@ button {
     .conditions__order {
       -ms-flex-preferred-size: 0;
           flex-basis: 0; }
-      .conditions__order-text-heart img {
-        left: -25px;
-        top: -10px; }
-      .conditions__order-text-heart span {
-        left: -10px;
-        top: -2px; }
+      .conditions__order-text-heart {
+        left: 10px;
+        top: -8px; }
+        .conditions__order-text-heart img {
+          left: -25px;
+          top: -10px; }
+        .conditions__order-text-heart span {
+          left: -10px;
+          top: 4px; }
       .conditions__order-bow-1 {
         width: 30px;
         height: 45px;

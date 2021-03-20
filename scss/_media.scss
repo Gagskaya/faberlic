@@ -236,13 +236,15 @@
     &__order {
       &-text {
         &-heart {
+          left: 10px;
+          top: -8px;
           img {
             left: -25px;
             top: -10px;
           }
           span {
             left: -10px;
-            top: -2px;
+            top: 4px;
           }
         }
       }
